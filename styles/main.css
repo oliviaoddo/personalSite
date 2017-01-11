@@ -1,0 +1,159 @@
+body {
+  color: #1b325f;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background: #f8fbfd;
+  font-size: 16px; 
+  margin: 0px;
+}
+
+
+#info{
+	color: #fff;
+	/*float: center;
+	text-align: center;*/
+	font-family: 'Julius Sans One', sans-serif;
+/*	position: fixed;
+    top: 40%;
+    margin-left: 40%;*/
+	position: absolute; 
+	top: 20%; 
+	left: 0; 
+	width: 100%; 
+
+}
+
+.center {
+    text-align: center;
+    position: relative; 
+}
+
+
+.nav {
+    list-style-type: none;
+    padding-left:5%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 95%;
+    position: absolute; 
+	top: 0; 
+}
+
+.nav li {
+    float: right;
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: rgba(200, 85, 65, 0.8);
+    border-radius: 10px;
+}
+
+li:hover{
+ background-color: transparent;
+ text-decoration: none;
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: #1b325f ;
+}
+.nav>li>a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+a.activeLink.active {
+    color: red;
+}
+
+a {
+	color: #1b325f;
+}
+
+#aboutRow{
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+	color: #fff;
+}
+
+#aboutBack{
+	padding-top: 10%;
+	height: 100%;
+	background-color: #c85541;
+	background-image: url("swirl.png");
+}
+
+footer{
+	background-color: rgb(200, 85, 65);
+	width: 100%;
+	height: 200px;
+}
+
+#olivia{
+	border-radius: 100%;
+}
+
+#footerLinks{
+	padding-top: 5%;
+}
+
+#store{
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: left;
+
+}
+
+#kind{
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+#projectHeading{
+	text-align:left;
+	margin-top: 8%;
+	margin-left: 8%;
+}
+
+#contactRow{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+/*Styling used for when a product on it's own page is clicked*/
+
+/*transparent black background*/ 
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+/*position of the image on the overlay*/
+#overlay img {
+ margin-top: 10%; 
+}
+
+/*color of text on the overlay*/
+#overlay p {
+ color:white; 
+}

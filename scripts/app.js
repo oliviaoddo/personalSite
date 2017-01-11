@@ -1,4 +1,4 @@
-var app = angular.module("personalSiteApp", ["ngRoute", "ngCookies"]);
+var app = angular.module("personalSiteApp", ["ngRoute"]);
 
 // routes
 app.config(function($routeProvider) {
@@ -18,12 +18,6 @@ app.config(function($routeProvider) {
         // route for the service page
         .when('/contact', {
             templateUrl : 'templates/contact.html',
-            controller  : 'mainController'
-        })
-
-         // route for the about page
-        .when('/about', {
-            templateUrl : 'templates/about.html',
             controller  : 'mainController'
         })
 
