@@ -15,5 +15,9 @@ app.controller('mainController', function($window, $scope, $route, $location) {
 	  }
 	});
 
+	$scope.isActive = function (viewLocation) { 
+		return viewLocation === $location.path();
+	};
+
 
 });

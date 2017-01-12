@@ -1,9 +1,9 @@
 <div class="center">
 	<ul class="nav">
-		<li><a class="activeLink" ng-class="{ active: isActive('/projects')}" href="#projects">Projects</a></li>
-		<li><a class="activeLink" ng-class="{ active: isActive('/')}" href="#about">About</a></li>
+		<li class="notActive"><a href="#projects">Projects</a></li>
+		<li class="activeLink"><a href="#about">About</a></li>
 	</ul>
-	<img src="images/pineapples.png" width="100%" height="50%">
+	<img src="images/pineapples.jpg" width="100%" height="50%">
 	<div id="info">
 		<h1>Olivia Oddo</h1>
 		<h3>Front-End Web Developer</h3> 
@@ -29,39 +29,42 @@
 	<div class="row" id="skillsRow">
 		<h2>Skills</h2>
 		<div id="skills" class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<h4>HTML</h4>
 				<h4>CSS</h4>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<h4>Javascript</h4>
 				<h4>jQuery</h4>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<h4>Angular</h4>
 				<h4>PHP</h4>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-xs-6">
 				<h4>MySQL</h4>
 				<h4>Wordpress</h4>
 			</div>
 		</div>
 		<div id="resumeDiv">
 			<a id="resume" href="images/webResume">Resume <i class="fa fa-paperclip" aria-hidden="true"></i></a>
+			<a id="resumeMobile" href='images/webResume.pdf' download>Resume <i class="fa fa-paperclip" aria-hidden="true"></i></a>
 		</div>
 	</div>
 	<footer id="contactRow" class="row">
-		<h2>Contact</h2>
-		<h4>Considering me for an open position or project? Or just want to have a chat?<br> Get a hold of me and let's talk!</h4>
+		<div id="contactDiv" class="col-xs-12">
+			<h2>Contact</h2>
+			<h4>Considering me for an open position or project? Or just want to have a chat?<br> Get a hold of me and let's talk!</h4>
+		</div>
 		<div class="row" id="iconRow">
-			<div class="col-md-4">
-				<a href = "http://twitter.com/oliviaoddo"><i id= "twitter" style="color: #fff" class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+			<div class="col-md-4 col-xs-4">
+				<a id= "twitter" target="_blank" href = "http://twitter.com/oliviaoddo"><i style="color: #fff" class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 			</div>
-			<div class="col-md-4">
-				<a href = "http://facebook.com/oliviaoddo"><i style="color: #fff" class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+			<div class="col-md-4 col-xs-4">
+				<a target="_blank" href = "http://facebook.com/oliviaoddo"><i style="color: #fff" class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
 			</div>
-			<div class="col-md-4">
-				<a href = "http://facebook.com/oliviaoddo"><i style="color: #fff" class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+			<div class="col-md-4 col-xs-4">
+				<a target="_blank" href = "http://facebook.com/oliviaoddo"><i style="color: #fff" class="fa fa-github fa-3x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class="row">
