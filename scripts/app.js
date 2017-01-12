@@ -9,7 +9,7 @@ app.config(function($routeProvider) {
             templateUrl : 'templates/home.html',
             controller  : 'mainController'
         })
-        // route for the about page
+        // route for the projects page
         .when('/projects', {
             templateUrl : 'templates/projects.html',
             controller  : 'mainController'

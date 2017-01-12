@@ -1,10 +1,14 @@
-body {
-  color: #35373a;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  background: #f8fbfd;
-  font-size: 16px; 
-  margin: 0px;
+html, body {
+	color: #35373a;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	background: #f8fbfd;
+	font-size: 16px; 
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+	-webkit-overflow-scrolling: touch;
 }
 
 h2{
@@ -19,15 +23,10 @@ h4{
 	line-height: 30px;
 }
 
-
+/*Olivia Oddo text positioning*/
 #info{
 	color: #fff;
-	/*float: center;
-	text-align: center;*/
 	font-family: 'Julius Sans One', sans-serif;
-/*	position: fixed;
-    top: 40%;
-    margin-left: 40%;*/
 	position: absolute; 
 	top: 10%; 
 	left: 0; 
@@ -72,7 +71,8 @@ li:hover{
 
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: transparent;
+    background-color: rgba(53, 55, 58, 0.8);
+    border-radius: 10px;
 }
 
 .nav>li>a:focus {
@@ -86,12 +86,46 @@ li:hover{
     color: #fff;
 }
 
-a.activeLink.active {
-    color: red;
+li.notActive {
+    background-color: rgba(200, 85, 65, 0.8);
+    /*border-bottom: solid #fff;*/
+}
+
+li.notActive:hover {
+    background-color: rgba(200, 85, 65, 0.8);
+    border-bottom: none;
+}
+
+li.active:hover {
+    background-color: rgba(200, 85, 65, 0.8);
+    border-bottom: none;
+}
+.projectNav{
+	width: 100%;
+	padding-top: 30px;
+    background-color: #c85541;
+    padding-bottom: 30px;
+    background-image: url("mirrored-squares.png");
+}
+
+ul.projectNav {
+    list-style: none;
+    padding-left: 50%;
+}
+
+.projectNav li{
+	display: inline;
+	text-decoration: none;
+	margin-right: 5px;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.projectNav li a{
+	color: #fff;
 }
 
 a {
-	color: #1b325f;
+	color: #fff;
 }
 
 #aboutRow{
@@ -108,12 +142,13 @@ a {
 	background-image: url("swirl.png");
 }
 
-/*footer{
+#projectFooter{
 	background-color: rgb(200, 85, 65);
 	width: 100%;
 	height: 200px;
-}*/
+}
 
+/*profile photo*/
 #olivia{
 	border-radius: 100%;
 }
@@ -145,13 +180,12 @@ a {
 	margin-left: 8%;
 }
 
-/*Styling used for when a product on it's own page is clicked*/
 
 /*transparent black background*/ 
 #overlay {
   background:rgba(0,0,0,0.7);
   width:100%;
-  height: 400%;
+  height: 150%;
   position:absolute;
   top:0;
   left:0;
@@ -161,7 +195,7 @@ a {
 
 /*position of the image on the overlay*/
 #overlay #popup{
- margin-top: 100%; 
+ margin-top: 5%; 
 }
 
 /*color of text on the overlay*/
@@ -169,9 +203,10 @@ a {
  color:white; 
 }
 
+
 #contactRow{
 	background-color: #c85541;
-	background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+	background-image: url("mirrored-squares.png");
 	color: #fff;
 	padding-top: 10%;
     padding-bottom: 5%;
@@ -212,6 +247,10 @@ a#resume:hover{
 
 }
 
+#resumeMobile{
+	display: none;
+}
+
 
 #iconRow{
 	margin-top: 5%;
@@ -224,6 +263,7 @@ a#resume:hover{
 	padding-top: 10%;
 	padding-bottom: 10%;
 	background-color: #f5f5f5;
+	background-image: url("graphcoders-lil-fiber.png");
 }
 
 p#copyright {
@@ -248,6 +288,76 @@ div#downloadicon {
     margin-bottom: 10px;
 }
 
-#twitter:hover{
-	color: grey;
+#contactDiv{
+	margin-bottom: 5%;
+
+}
+
+@media only screen and (max-width: 700px){
+	#contactDiv{
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-bottom: 5%;
+	}
+
+	#iconRow{
+		margin-bottom: 40px;
+	}
+
+	#info{
+		color: #fff;
+		font-family: 'Julius Sans One', sans-serif;
+		position: absolute; 
+		top: 5%; 
+		left: 0; 
+		width: 100%; 
+		font-size:5px;
+
+	}
+
+	h1{
+		font-size: 40px;
+		line-height: 10px;
+	}
+
+	h3{
+		font-size: 15px;
+		line-height: 10px;
+	}
+
+	#resume{
+		display: none;
+	}
+
+	#resumeMobile{
+		display: inline;
+	}
+
+	a#resumeMobile{
+		color: #fff;
+	    background-color: #35373a;
+	    padding: 10px;
+	    margin-top: 5%;
+	    font-size: 1.2em;
+	}
+
+	a#resumeMobile:hover{
+		color: #35373a;
+	    background-color: transparent;
+	    padding: 10px;
+	    margin-top: 5%;
+	    border: 2px;
+	    border-style: solid;
+	    text-decoration: none;
+
+	}
+
+	iframe{
+		height:180px;
+		width:320px;
+	}
+
+	#footerLinks{
+		padding-top: 70px;
+	}
 }
