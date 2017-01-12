@@ -14,13 +14,6 @@ app.config(function($routeProvider) {
             templateUrl : 'templates/projects.html',
             controller  : 'mainController'
         })
- 
-        // route for the service page
-        .when('/contact', {
-            templateUrl : 'templates/contact.html',
-            controller  : 'mainController'
-        })
-
         .otherwise('/', {
             templateUrl : 'templates/home.html',
             controller  : 'mainController'
